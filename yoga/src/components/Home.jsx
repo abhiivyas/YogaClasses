@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "../styles/Home.css"
 import LandingPage from '../components/LandingPage';
 
 const Home = () => {
