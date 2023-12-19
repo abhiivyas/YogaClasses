@@ -21,7 +21,8 @@
 }
 
 h1 {
-  color: #4CAF50;
+  color: #333;
+  font: arial black;
 }
 
 .paymentSuccess_img {

@@ -2,8 +2,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-// const dotenv = require('dotenv');
-// require('dotenv').config();
 
 const DB ='mongodb+srv://studio:yoga@cluster0.wvrdpcv.mongodb.net/yogaclass?retryWrites=true&w=majority'
  mongoose.connect(DB).then(( ) => {
@@ -100,4 +98,4 @@ app.get('/profile', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-//final change'
+//monngo

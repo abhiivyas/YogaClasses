@@ -2,12 +2,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/LandingPage.css';
+import '../styles/ContactForm.css';
 const LandingPage = () => {
   return (
     <div>
       <header>
         <nav>
-          <div className="logo">Your Yoga Studio</div>
+          <div className="logo">HOME</div>
           <ul className="nav-links">
             <li><Link to="#about">About</Link></li>
             <li><Link to="#classes">Classes</Link></li>
@@ -19,7 +20,7 @@ const LandingPage = () => {
 
       <section id="hero">
         <div className="hero-content">
-          <h1>Welcome to Your Yoga Journey</h1>
+          <h1>YOGA STUDIO</h1>
           <p>Find balance, peace, and strength through yoga.</p>
         </div>
         <Link to="/admission" className="landingpage_btn">Enroll Now</Link>
@@ -28,7 +29,7 @@ const LandingPage = () => {
       <section id="about">
         <div className="container">
           <h2>About Us</h2>
-          <p>Your Yoga Studio is dedicated to providing a welcoming and nurturing environment for all levels of practitioners.</p>
+          <p> Yoga Studio is dedicated to providing a welcoming and nurturing environment for all levels of practitioners.</p>
         </div>
       </section>
 
@@ -36,36 +37,40 @@ const LandingPage = () => {
         <div className="container">
           <h2>Classes</h2>
           <p>Discover a variety of classes tailored to meet your needs, from beginners to advanced practitioners.</p>
-          <div className="class-card">
-            <h3>Hatha Yoga</h3>
-            <p>A gentle form of yoga that focuses on physical postures and breathing exercises.</p>
-          </div>
-          <div className="class-card">
-            <h3>Vinyasa Flow</h3>
-            <p>Flowing sequences of yoga poses synchronized with the breath for a dynamic practice.</p>
-          </div>
-          { }
+
         </div>
       </section>
 
       <section id="schedule">
         <div className="container">
           <h2>Class Schedule</h2>
-          <p>Check out our weekly schedule and join us for a session.</p>
+          <p>Enroll at anytime in month</p>
           { }
         </div>
       </section>
 
       <section id="contact">
-        <div className="container">
-          <h2>Contact Us</h2>
-          <p>Have questions or want to join a class? Reach out to us!</p>
-          { }
-        </div>
-      </section>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Drop your email, and we will reach out to you!</p>
+
+      <form>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
       <footer>
-        <p>&copy; {new Date().getFullYear()} Your Yoga Studio. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()}  Yoga Studio. All rights reserved.</p>
       </footer>
     </div>
   );

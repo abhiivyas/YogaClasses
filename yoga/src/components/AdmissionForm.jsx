@@ -85,7 +85,7 @@ const AdmissionForm = () => {
 
       <div className="card">
         <div className="card-header bg-primary text-white">
-          <h2 className="mb-0">Yoga Class Admission Form</h2>
+          <h2 className="mb-0">Yoga Studio Admission Form</h2>
         </div>
         <div className="card-body">
           <form onSubmit={handleSubmit}>

@@ -11,8 +11,8 @@ const PaymentPage = () => {
   
   const completePayment = async () => {
     
-    if (!amount || !creditCardNumber || creditCardNumber.length !== 8) {
-      alert('Please enter valid amount and 8-digit credit card number');
+    if (!amount || !creditCardNumber || creditCardNumber.length !== 10) {
+      alert('Please enter valid amount and 10-digit credit card number');
       return;
     }
 
@@ -53,7 +53,7 @@ const PaymentPage = () => {
           </div>
           <div className="mb-3">
             <label htmlFor="creditCardNumber" className="form-label">
-              Credit Card Number (8 digits):
+              Credit Card Number (10 digits):
             </label>
             <input
               type="number"
@@ -61,7 +61,7 @@ const PaymentPage = () => {
               value={creditCardNumber}
               onChange={(e) => setCreditCardNumber(e.target.value)}
               className="form-control"
-              maxLength="8"
+              maxLength="10"
               required
             />
           </div>

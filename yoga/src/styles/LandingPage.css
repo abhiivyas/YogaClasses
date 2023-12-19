@@ -8,7 +8,8 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 1em;
+    padding: 1.5em;
+    
 }
 
 nav {
@@ -18,7 +19,7 @@ nav {
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -28,7 +29,8 @@ nav {
 }
 
 .nav-links li {
-    margin: 0 1em;
+    margin: 0 0.8em;
+    
 }
 
 a {
@@ -49,17 +51,22 @@ a {
     max-width: 600px;
     margin: 0 auto;
 }
-
-
-
-
+.hero-content h1 {
+    font-family: arial black, sans-serif; 
+    font-size: 4em;
+    color: #333;
+    margin-top: -50px; 
+}
+.hero-content p {
+    color: #333;
+}
 
 .landingpage_btn {
     margin-top: 300px;
     display: inline-block;
     padding: 0.5em 1em;
-    background-color: #fff;
-    color: #333;
+    background-color: #333;
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -81,4 +88,28 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1em 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  header {
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landingpage_btn {
+    margin-top: 20px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .class-card {
+    margin-bottom: 20px;
+  }
 }
