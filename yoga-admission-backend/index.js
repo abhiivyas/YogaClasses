@@ -2,14 +2,19 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+// const dotenv = require('dotenv');
+// require('dotenv').config();
+
+const DB ='mongodb+srv://studio:yoga@cluster0.wvrdpcv.mongodb.net/yogaclass?retryWrites=true&w=majority'
+ mongoose.connect(DB).then(( ) => {
+  console.log('connnection successful');
+ }).catch((err) => console.log('no connection'));
 
 const app = express();
 const PORT = 3001;
 
-mongoose.connect("mongodb://localhost:27017/yoga", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+
+
 
 const conn = mongoose.connection;
 
