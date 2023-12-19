@@ -1,8 +1,7 @@
-// src/components/LandingPage.js
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/LandingPage.css'; // Assuming you save the CSS code in a file named LandingPage.css
-
+import '../styles/LandingPage.css';
 const LandingPage = () => {
   return (
     <div>
@@ -23,7 +22,7 @@ const LandingPage = () => {
           <h1>Welcome to Your Yoga Journey</h1>
           <p>Find balance, peace, and strength through yoga.</p>
         </div>
-          <Link to="/admission" className="landingpage_btn">Enroll Now</Link>
+        <Link to="/admission" className="landingpage_btn">Enroll Now</Link>
       </section>
 
       <section id="about">
@@ -45,7 +44,7 @@ const LandingPage = () => {
             <h3>Vinyasa Flow</h3>
             <p>Flowing sequences of yoga poses synchronized with the breath for a dynamic practice.</p>
           </div>
-          {/* Add more class cards as needed */}
+          { }
         </div>
       </section>
 
@@ -53,7 +52,7 @@ const LandingPage = () => {
         <div className="container">
           <h2>Class Schedule</h2>
           <p>Check out our weekly schedule and join us for a session.</p>
-          {/* Add a table or other layout for the schedule */}
+          { }
         </div>
       </section>
 
@@ -61,8 +60,8 @@ const LandingPage = () => {
         <div className="container">
           <h2>Contact Us</h2>
           <p>Have questions or want to join a class? Reach out to us!</p>
-          {/* Add a contact form or contact information */}
-        </div>  
+          { }
+        </div>
       </section>
 
       <footer>

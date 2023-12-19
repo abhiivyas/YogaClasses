@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to right, #81c784, #4caf50); /* Gradient background */
+  background: linear-gradient(to right, #81c784, #4caf50);
 }
 
 .admission-form {
@@ -35,12 +35,12 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  transition: border-color 0.3s ease; /* Input transition effect */
+  transition: border-color 0.3s ease;
 }
 
 input:focus,
 select:focus {
-  border-color: #2d84ee; /* Change border color on focus */
+  border-color: #2d84ee;
 }
 
 button {
@@ -51,28 +51,28 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s ease; /* Button transition effect */
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: #2d84ee;
 }
 
-/* Error message styling */
+
 .error-message {
-  color: #d32f2f; /* Red color for error messages */
+  color: #d32f2f;
   font-size: 14px;
   margin-top: 5px;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   .admission-form-container {
-    flex-direction: column; /* Stack items vertically on small screens */
-    text-align: center; /* Center align text on small screens */
+    flex-direction: column;
+    text-align: center;
   }
 
   .admission-form {
-    margin-top: 20px; /* Add some spacing between the form and the image on small screens */
+    margin-top: 20px;
   }
 }

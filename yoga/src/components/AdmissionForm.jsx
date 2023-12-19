@@ -25,7 +25,7 @@ const AdmissionForm = () => {
       [name]: value,
     });
 
-    // Handle email validation separately
+
     if (name === 'email') {
       validateEmail(value);
     }
@@ -48,7 +48,7 @@ const AdmissionForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Age validation
+
     const age = parseInt(formData.age, 10);
 
     if (isNaN(age) || age < 18 || age > 65) {
@@ -58,7 +58,6 @@ const AdmissionForm = () => {
       setAgeError('');
     }
 
-    // Assuming you have an API endpoint for form submission
     try {
       const response = await fetch('http://localhost:3001/api/register', {
         method: 'POST',
@@ -134,7 +133,7 @@ const AdmissionForm = () => {
                     className={`form-control ${emailError ? 'is-invalid' : ''}`}
                     required
                   />
-                  {/* Display email error message if needed */}
+                  { }
                   {emailError && <div className="invalid-feedback">{emailError}</div>}
                 </div>
                 Select Batch:
@@ -158,7 +157,7 @@ const AdmissionForm = () => {
               Submit
             </button>
 
-            {/* Display payment status */}
+            { }
             {paymentStatus && (
               <div className={`alert mt-3 ${paymentStatus.includes('successful') ? 'alert-success' : 'alert-danger'}`}>
                 {paymentStatus}
