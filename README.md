@@ -1,4 +1,4 @@
-# Flexmoney Assignment 2023
+
 This Yoga Studio website allows user to enroll in the yoga classes by commpleting theri payment
 
 # I have used the following technology:
